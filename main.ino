@@ -3,7 +3,7 @@
 
 const char* ssid = "YOUR_WIFI";
 const char* password = "YOUR_PASSWORD";
-const char* serverName = "http://localhost/IOT/index.php";
+const char* serverName = "http://localhost/iot/index.php";
 
 #define TRIG1 5
 #define ECHO1 18
