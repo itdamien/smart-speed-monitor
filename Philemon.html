@@ -37,5 +37,26 @@
       border-radius:5px;
       margin-top:10px;
     }
-  </style>
+ 
 </head>
+
+<body>
+
+  <h1>Motion Sensor Dashboard</h1>
+
+  <div class="card">
+    <h2>Status</h2>
+    <p class="status"><?php echo $statusText; ?></p>
+    <p>Last update: <?php echo $time; ?></p>
+  </div>
+
+  <div class="card">
+    <h2>System</h2>
+    <form method="POST">
+      <button name="on">Activate</button>
+      <button name="off">Deactivate</button>
+    </form>
+  </div>
+
+</body>
+</html>
