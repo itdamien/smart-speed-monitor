@@ -1,0 +1,41 @@
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IoT Dashboard</title>
+
+  <!-- Auto refresh every 3 seconds -->
+  <meta http-equiv="refresh" content="3">
+
+  <style>
+    body{
+      font-family: Arial;
+      background:#f4f4f4;
+      text-align:center;
+      padding:20px;
+    }
+
+    .card{
+      background:white;
+      padding:20px;
+      margin:10px auto;
+      max-width:400px;
+      border-radius:10px;
+      box-shadow:0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .status{
+      font-size:22px;
+      font-weight:bold;
+      color: <?php echo ($motion == "detected") ? "red" : "green"; ?>;
+    }
+
+    button{
+      padding:10px 20px;
+      border:none;
+      background:#2c7be5;
+      color:white;
+      border-radius:5px;
+      margin-top:10px;
+    }
+  </style>
+</head>
