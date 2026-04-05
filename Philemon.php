@@ -43,4 +43,28 @@ if ($method == "GET") {
     echo json_encode($data);
 }
 
+
+$file = "data.json";
+
+// Handle button clicks
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+
+    $motion = "none";
+
+    if (isset($_POST['on'])) {
+        $motion = "detected";
+    }
+
+    if (isset($_POST['off'])) {
+        $motion = "none";
+    }
+
+    $data = [
+        "motion" => $motion,
+        "time" => date("Y-m-d H:i:s")
+    ];
+
+    file_put_contents($file, json_encode($data));
+}
+
 ?>
